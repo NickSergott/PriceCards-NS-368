@@ -138,39 +138,38 @@
   .price-card:nth-child(3) .cta-button {
     background-color: #FFD700;
   }
-  Copy
   /* Mobile View (default, up to 767px) */
   /* Already set width: 100% in the base .price-card style */
   
   /* Tablet View (768px to 991px) */
-  @media (min-width: 768px) and (max-width: 991px) {
-    .price-card {
-      width: 45%;
-      margin: 0 2% 30px 2%;
-    }
-  
-    .price-card:nth-child(3) {
-      width: 70%;
-      margin-left: auto;
-      margin-right: auto;
-    }
-  }
-  
-  /* Desktop View (992px and above) */
-  @media (min-width: 992px) {
-    .price-card {
-      width: 30%;
-      margin: 0 1.5% 30px 1.5%;
-    }
-  }
-  Copy
+/* Tablet View (768px - 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
   .price-card {
-    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-    transition: transform 0.3s, box-shadow 0.3s;
+    width: 45%;
+    margin: 0 2% 30px 2%;
   }
-  
-  .price-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  .price-card:nth-child(3) {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
   }
-  
+}
+
+/* Desktop View (992px and above) */
+@media (min-width: 992px) {
+  .price-card {
+    width: 30%;
+    margin: 0 1.5% 30px 1.5%;
+  }
+}
+
+/* Default Price Card Styles */
+.price-card {
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.price-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
